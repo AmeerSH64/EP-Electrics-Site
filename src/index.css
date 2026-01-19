@@ -100,10 +100,10 @@ section {
       @apply hidden lg:flex items-center;
 
       ul {
-        @apply flex space-x-8;
+        @apply flex space-x-8 gap-5;
 
         li {
-          @apply text-white-50 relative;
+          @apply text-white-50 relative text-2xl;
 
           span {
             @apply transition-colors duration-300 hover:text-white;
@@ -117,8 +117,41 @@ section {
     }
 
     .btn-primary {
-      @apply flex absolute right-5 bg-primary text-white font-bold p-5 rounded-lg 
-      w-40 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
+      @apply flex absolute top-5 right-5 bg-primary text-white text-3xl font-bold p-5 rounded-lg 
+      w-50 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px var(--color-secondary);
+      }
+    }
+  }
+
+  .home-layout {
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+
+    h1 {
+      @apply text-2xl md:text-7xl;
+    }
+
+    h1 span {
+      @apply text-primary font-bold;
+    }
+
+    h1 .span-2 {
+      @apply text-secondary;
+    }
+
+    .sun-icon {
+      @apply w-15 h-15 rounded-full bg-primary text-yellow-300;
+    }
+
+    .elec-icon {
+      @apply w-15 h-15 rounded-full bg-secondary text-yellow-300;
+    }
+
+    button {
+      @apply mt-10 bg-primary text-white text-2xl font-bold p-5 rounded-lg 
+      w-70 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
 
       &:hover {
         box-shadow: 0 0 10px var(--color-secondary);

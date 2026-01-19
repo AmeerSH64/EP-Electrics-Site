@@ -21,7 +21,7 @@ const NavBar = () => {
                 </ul>
             </nav>
             <a href="#">
-                <button className='btn-primary'>Get a Quote</button>
+                <button className='btn-primary'>Contact Us</button>
             </a>
         </div>
     </header>
