@@ -1,0 +1,128 @@
+@import 'tailwindcss';
+
+html,
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100dvw;
+}
+
+@theme {
+  --color-primary: #03c5ab;
+  --color-secondary: #008387;
+  --color-white-50: #d9ecff;
+  --color-black-50: #1c1c21;
+  --color-black-100: #0e0e10;
+  --color-black-200: #282732;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+@layer components {
+  .padding-x {
+    @apply px-5 md:px-10;
+  }
+
+  .padding-x-lg {
+    @apply px-5 md:px-20;
+  }
+
+  .section-padding {
+    @apply px-5 md:px-10 md:mt-40 mt-20;
+  }
+
+  .mt-responsive {
+    @apply xl:mt-20 md:mt-0 mt-40;
+  }
+
+  /* General Grids */
+  .grid-base {
+    @apply grid grid-cols-1;
+  }
+
+  .grid-2-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+  }
+
+  .grid-3-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+  }
+
+  .grid-3-cols-md-tight {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
+  }
+
+  .grid-4-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+  }
+
+  .grid-12-cols {
+    @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
+  }
+
+  .navbar {
+    @apply fixed w-full left-1/2 px-5 py-5 md:px-10 -translate-x-1/2 z-[100];
+
+    &.scrolled {
+      @apply bg-black-50 backdrop-blur-2xl border-b border-black-200;
+    }
+
+    &.not-scrolled {
+      @apply md:top-10 top-0 bg-transparent;
+    }
+
+    .inner {
+      @apply mx-auto flex items-center justify-center;
+    }
+
+    .logo {
+      @apply absolute left-5 top-5 w-15 h-15 cursor-pointer transition-shadow duration-300 ease-in-out;
+    }
+
+    .logo:hover {
+      box-shadow: 0 0 10px var(--color-primary);
+    }
+
+    nav.desktop {
+      @apply hidden lg:flex items-center;
+
+      ul {
+        @apply flex space-x-8;
+
+        li {
+          @apply text-white-50 relative;
+
+          span {
+            @apply transition-colors duration-300 hover:text-white;
+          }
+
+          .underline {
+            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
+          }
+        }
+      }
+    }
+
+    .btn-primary {
+      @apply flex absolute right-5 bg-primary text-white font-bold p-5 rounded-lg 
+      w-40 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px var(--color-secondary);
+      }
+    }
+  }
+}
