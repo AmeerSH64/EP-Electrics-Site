@@ -6,15 +6,22 @@ const Home = () => {
       <div className='home-layout'>
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className='flex flex-col gap-7'>
-            <h1>Providing <span>Efficient</span><IconSunFilled className='sun-icon' /></h1>
-            <h1>and <span className='span-2'>Electrifying</span><IconBoltFilled className='elec-icon' /></h1>
+            <h1>Providing 
+              <span>Efficient</span>
+              <IconSunFilled className='sun-icon' />
+            </h1>
+            <h1>and 
+              <span className='span-2'>Electrifying</span>
+              <IconBoltFilled className='elec-icon' />
+            </h1>
             <h1>Solutions for</h1>
             <h1>Homes and</h1>
             <h1>Businesses</h1>
           </div>
-          <a href="#">
+          <a href="#services">
             <button className='btn-primary'>
-              SEE OUR SERVICES<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+              SEE OUR SERVICES
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
               stroke-linecap="round" stroke-linejoin="round" 
               class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-down">
@@ -28,8 +35,8 @@ const Home = () => {
         </header>
 
         <div className='home-images'>
-          <img src="/images/EV-Charger.png" alt="EV Charger" />
-          <img src="/images/Solar-Panel.png" alt="Solar Panels" />
+          <img id="ev-charger" src="/images/EV-Charger.png" alt="EV Charger" />
+          <img id="solar-panel" src="/images/Solar-Panel.png" alt="Solar Panels" />
         </div>
       </div>
     </section>

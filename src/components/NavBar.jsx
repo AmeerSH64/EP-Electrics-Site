@@ -10,17 +10,17 @@ const NavBar = () => {
             <nav className='desktop'>
                 <ul>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#about">About Us</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#">Testimonials</a>
+                        <a href="#testimonials">Testimonials</a>
                     </li>
                 </ul>
             </nav>
-            <a href="#">
+            <a href="#contact">
                 <button className='btn-primary'>Contact Us</button>
             </a>
         </div>

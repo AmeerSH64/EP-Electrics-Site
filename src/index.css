@@ -74,22 +74,16 @@ section {
   }
 
   .navbar {
-    @apply fixed w-full left-1/2 px-5 py-5 md:px-10 -translate-x-1/2 z-[100];
-
-    &.scrolled {
-      @apply bg-black-50 backdrop-blur-2xl border-b border-black-200;
-    }
-
-    &.not-scrolled {
-      @apply md:top-10 top-0 bg-transparent;
-    }
+    @apply fixed w-full left-1/2 px-5 py-10 xl:py-5 md:px-10 -translate-x-1/2 z-[100]
+    border-b border-black-200 backdrop-blur-2xl;
 
     .inner {
       @apply mx-auto flex items-center justify-center;
     }
 
     .logo {
-      @apply absolute left-5 top-5 w-15 h-15 cursor-pointer transition-shadow duration-300 ease-in-out;
+      @apply absolute left-5 top-5 w-10 h-10 cursor-pointer 
+      transition-all duration-300 ease-in-out;
     }
 
     .logo:hover {
@@ -103,7 +97,7 @@ section {
         @apply flex space-x-8 gap-5;
 
         li {
-          @apply text-white-50 relative text-2xl;
+          @apply text-white-50 relative text-2xl transition-transform duration-300 ease-in-out cursor-pointer;
 
           span {
             @apply transition-colors duration-300 hover:text-white;
@@ -113,12 +107,17 @@ section {
             @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
           }
         }
+
+        li:hover {
+          @apply translate-y-1;
+        }
       }
     }
 
     .btn-primary {
-      @apply flex absolute top-5 right-5 bg-primary text-white text-3xl font-bold p-5 rounded-lg 
-      w-50 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
+      @apply flex absolute top-4 right-3 xl:top-2 xl:right-2 bg-primary 
+      text-white lg:text-3xl text-xl font-bold p-2 rounded-lg 
+       justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
 
       &:hover {
         box-shadow: 0 0 10px var(--color-secondary);
@@ -127,10 +126,11 @@ section {
   }
 
   .home-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex flex-col 
+    xl:flex-row xl:items-center items-start justify-center;
 
     h1 {
-      @apply text-2xl md:text-7xl;
+      @apply text-4xl md:text-7xl flex flex-row flex-wrap gap-2 md:gap-5;
     }
 
     h1 span {
@@ -141,21 +141,45 @@ section {
       @apply text-secondary;
     }
 
+    h1 > svg {
+      @apply w-10 h-10 md:w-15 md:h-15 md:mt-2 rounded-full text-yellow-300;
+    }
+
     .sun-icon {
-      @apply w-15 h-15 rounded-full bg-primary text-yellow-300;
+      @apply bg-primary;
     }
 
     .elec-icon {
-      @apply w-15 h-15 rounded-full bg-secondary text-yellow-300;
+      @apply bg-secondary;
     }
 
     button {
-      @apply mt-10 bg-primary text-white text-2xl font-bold p-5 rounded-lg 
-      w-70 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
+      @apply flex flex-row mt-10 bg-primary text-white text-2xl font-bold p-2 md:p-5 rounded-lg 
+      w-90 gap-5 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
 
       &:hover {
-        box-shadow: 0 0 10px var(--color-secondary);
+        box-shadow: 0 0 15px var(--color-secondary);
+
+        svg {
+          @apply animate-bounce
+        }
       }
+
+      svg {
+        @apply w-8 h-8 -translate-y-0.5;
+      }
+    }
+
+    img {
+      @apply flex flex-wrap w-50 md:w-125 xl:w-450;
+    }
+
+    #ev-charger {
+      @apply translate-x-45 translate-y-20 md:translate-x-60 md:translate-y-40 xl:translate-y-100 xl:-translate-x-20;
+    }
+
+    #solar-panel {
+      @apply -translate-y-30 translate-x-10 md:-translate-y-80 xl:-translate-x-200 xl:-translate-y-150 z-2;
     }
   }
 }
