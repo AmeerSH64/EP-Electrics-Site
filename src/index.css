@@ -155,7 +155,7 @@ section {
 
     button {
       @apply flex flex-row mt-10 bg-primary text-white text-2xl font-bold p-2 md:p-5 rounded-lg 
-      w-90 gap-5 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
+      w-90 gap-5 justify-center cursor-pointer transition-all duration-300 ease-in-out;
 
       &:hover {
         box-shadow: 0 0 15px var(--color-secondary);
@@ -180,6 +180,12 @@ section {
 
     #solar-panel {
       @apply -translate-y-30 translate-x-10 md:-translate-y-80 xl:-translate-x-200 xl:-translate-y-150 z-2;
+    }
+  }
+
+  footer {
+    .logo {
+      @apply w-10 h-10 pt-1 cursor-pointer transition-all duration-300 ease-in-out;
     }
   }
 }
