@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             {socials.map((social) => (
               <a key={social.name} href={social.link} aria-label={social.name}
-              className="p-2 rounded-full hover:bg-black-200 hover:text-primary transition-all cursor-pointer">
+              className="p-2 text-white-50 rounded-full hover:bg-black-200 hover:text-primary transition-all cursor-pointer">
                 <social.icon className="w-10 h-10" />
               </a>
             ))}

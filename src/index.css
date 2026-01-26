@@ -86,10 +86,6 @@ section {
       transition-all duration-300 ease-in-out;
     }
 
-    .logo:hover {
-      box-shadow: 0 0 10px var(--color-primary);
-    }
-
     nav.desktop {
       @apply hidden lg:flex items-center;
 
@@ -116,11 +112,11 @@ section {
 
     .btn-primary {
       @apply flex absolute top-4 right-3 xl:top-2 xl:right-2 bg-primary 
-      text-white lg:text-3xl text-xl font-bold p-2 rounded-lg 
+      text-white lg:text-3xl text-xl font-bold p-2 px-5 rounded-lg 
        justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
 
       &:hover {
-        box-shadow: 0 0 10px var(--color-secondary);
+        box-shadow: 0 0 15px var(--color-secondary);
       }
     }
   }
@@ -134,11 +130,19 @@ section {
     }
 
     h1 span {
-      @apply text-primary font-bold;
+      @apply text-primary font-bold transition-all duration-300 ease-in-out;
+    }
+
+    h1 span:hover {
+      text-shadow: 0 0 10px var(--color-primary);
     }
 
     h1 .span-2 {
       @apply text-secondary;
+    }
+
+    h1 .span-2:hover {
+      text-shadow: 0 0 10px var(--color-secondary);
     }
 
     h1 > svg {
@@ -180,6 +184,35 @@ section {
 
     #solar-panel {
       @apply -translate-y-30 translate-x-10 md:-translate-y-80 xl:-translate-x-200 xl:-translate-y-150 z-2;
+    }
+  }
+
+  .testimonials-section {
+    @apply py-20;
+
+    .stars {
+      @apply flex flex-row space-x-2 mb-5;
+    }
+  }
+
+  .contact {
+    form {
+      @apply w-full;
+    }
+
+    label {
+      @apply block text-white-50 mb-2 text-lg font-medium;
+    }
+
+    input {
+      @apply w-full bg-black-100 border border-black-200 rounded-lg p-4 mb-4
+      text-white-50 placeholder-white-50 focus:outline-none focus:border-primary 
+      transition-all duration-300 ease-in-out;
+    }
+    textarea {
+      @apply w-full h-40 bg-black-100 border border-black-200 rounded-lg p-4 
+      text-white-50 placeholder-white-50 focus:outline-none focus:border-primary 
+      transition-all duration-300 ease-in-out;
     }
   }
 

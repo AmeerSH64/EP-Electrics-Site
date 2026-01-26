@@ -2,7 +2,10 @@ const Services = () => {
   return (
     <section id="services">
       <div className="section-padding text-center">
-        <h1 className="md:text-5xl text-3xl mb-8">Our Services</h1>
+        <h1 className="md:text-7xl text-3xl">Our Services</h1>
+        <p className="md:text-2xl text-white-50">
+          What we do
+        </p>
       </div>
     </section>
   )
