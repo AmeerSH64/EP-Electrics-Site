@@ -112,7 +112,7 @@ section {
 
     .btn-primary {
       @apply flex absolute top-4 right-3 xl:top-2 xl:right-2 bg-primary 
-      text-white lg:text-3xl text-xl font-bold p-2 px-5 rounded-lg 
+      text-white text-xl font-bold p-2 px-5 rounded-lg 
        justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
 
       &:hover {
@@ -196,6 +196,8 @@ section {
   }
 
   .contact {
+    @apply flex flex-col items-center justify-center;
+
     form {
       @apply w-full;
     }
@@ -204,21 +206,136 @@ section {
       @apply block text-white-50 mb-2 text-lg font-medium;
     }
 
-    input {
-      @apply w-full bg-black-100 border border-black-200 rounded-lg p-4 mb-4
-      text-white-50 placeholder-white-50 focus:outline-none focus:border-primary 
-      transition-all duration-300 ease-in-out;
+    input, textarea {
+      @apply w-full bg-black-50 px-4 py-3 rounded-xl focus:border-primary 
+      focus:ring-1 focus:ring-primary outline-none transition-all;
     }
     textarea {
-      @apply w-full h-40 bg-black-100 border border-black-200 rounded-lg p-4 
-      text-white-50 placeholder-white-50 focus:outline-none focus:border-primary 
-      transition-all duration-300 ease-in-out;
+      @apply resize-none;
+    }
+
+    button {
+      @apply bg-primary text-white text-2xl font-bold p-3 rounded-lg 
+      w-80 justify-center cursor-pointer transition-shadow duration-300 ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 15px var(--color-secondary);
+      }
     }
   }
 
   footer {
+    @apply p-4;
+
     .logo {
       @apply w-10 h-10 pt-1 cursor-pointer transition-all duration-300 ease-in-out;
     }
+  }
+}
+
+@layer utilities {
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes slow-drift {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -30px);
+    }
+    50% {
+      transform: translate(-15px, -20px);
+    }
+    75% {
+      transform: translate(30px, 10px);
+    }
+  }
+
+  @keyframes animated-border {
+    0% {
+      stroke-dashoffset: 400;
+    }
+    100% {
+      stroke-dashoffset: -550;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out both;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+
+  .group:hover .animated-border-path {
+    animation: animated-border 1.5s linear infinite;
+  }
+
+  .animated-border:hover {
+    background-color: color-mix(in srgb, #26c4b8 15%, transparent);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 20px color-mix(in srgb, #26c4b8 20%, transparent);
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .timeline-glow {
+    box-shadow: 0 0 4px color-mix(in srgb, var(--color-primary) 35%, transparent),
+        0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
   }
 }

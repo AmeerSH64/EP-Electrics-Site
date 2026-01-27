@@ -1,4 +1,4 @@
-import { IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX } from "@tabler/icons-react";
+import { IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX, IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
 
 const socials = [
   { name: "Instagram", href: "#", icon: IconBrandInstagram },
@@ -30,7 +30,29 @@ const testimonials = [
   },
 ]
 
+const contactInfo = [
+  {
+    icon: IconMail,
+    label: "Email",
+    value: "contact@epelectrics.com",
+    href: "mailto:contact@epelectrics.com",
+  },
+  {
+    icon: IconPhone,
+    label: "Phone",
+    value: "+44 7890 123456",
+    href: "tel:+447890123456",
+  },
+  {
+    icon: IconMapPin,
+    label: "Location",
+    value: "Milton Keynes, UK",
+    href: "https://maps.google.com/?q=Milton Keynes, UK",
+  },
+]
+
 export {
   socials,
-  testimonials
+  testimonials,
+  contactInfo,
 };
