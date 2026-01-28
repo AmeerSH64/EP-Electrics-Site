@@ -7,6 +7,25 @@ const socials = [
   { name: "Facebook", href: "#", icon: IconBrandFacebook },
 ]
 
+const services = [
+  {
+    name: "EV Charger Installation",
+    description: "Installing EV chargers at your property."
+  },
+  {
+    name: "Solar Panel Installation",
+    description: "Installing solar panels at your property."
+  },
+  {
+    name: "Air Conditioning Installation",
+    description: "Installing air conditioning units at your property."
+  },
+  {
+    name: "Electrical Inspections",
+    description: "Carry out safety inspections on your property."
+  },
+]
+
 const testimonials = [
   {
     name: "Ace Ukiyo",
@@ -18,6 +37,16 @@ const testimonials = [
     quote: "Extremely impressed with the work ethic of EP Electrics, you can count on them for any urgent electrical issues.",
     rating: 4
   },
+  {
+    name: "Mario Ballet",
+    quote: "I called EP Electrics to fit an EV Charger at home, it was ready to go by the next day and everything was done perfectly.",
+    rating: 5
+  },
+  {
+    name: "Amy Rose",
+    quote: "We had solar panels installed at our business by EP Electrics. They really impressed us.",
+    rating: 5
+  },,
   {
     name: "Mario Ballet",
     quote: "I called EP Electrics to fit an EV Charger at home, it was ready to go by the next day and everything was done perfectly.",
@@ -53,6 +82,7 @@ const contactInfo = [
 
 export {
   socials,
+  services,
   testimonials,
   contactInfo,
 };

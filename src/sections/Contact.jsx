@@ -28,7 +28,7 @@ const Contact = () => {
               </div>
               <a href="mailto:contact@epelctrics.com">
                 <button className="flex flex-row gap-4">
-                  Contact Us<IconSend className="w-5 h-5 mt-1" />
+                  Send Message<IconSend className="w-5 h-5 mt-1" />
                 </button>
               </a>
             </form>
