@@ -1,4 +1,4 @@
-import { IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX, IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
+import { IconAirConditioning, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX, IconBulb, IconChargingPile, IconCircuitCapacitor, IconDeviceComputerCamera, IconMail, IconMapPin, IconPhone, IconSolarPanel2 } from "@tabler/icons-react";
 
 const socials = [
   { name: "Instagram", href: "#", icon: IconBrandInstagram },
@@ -10,19 +10,33 @@ const socials = [
 const services = [
   {
     name: "EV Charger Installation",
+    icon: IconChargingPile,
     description: "Installing EV chargers at your property."
   },
   {
     name: "Solar Panel Installation",
+    icon: IconSolarPanel2,
     description: "Installing solar panels at your property."
   },
   {
     name: "Air Conditioning Installation",
+    icon: IconAirConditioning,
     description: "Installing air conditioning units at your property."
   },
   {
     name: "Electrical Inspections",
+    icon: IconCircuitCapacitor,
     description: "Carry out safety inspections on your property."
+  },
+  {
+    name: "Property Lighting",
+    icon: IconBulb,
+    description: "Installing property lighting at your property."
+  },
+  {
+    name: "Security Cameras",
+    icon: IconDeviceComputerCamera,
+    description: "Installing security cameras at your property."
   },
 ]
 
