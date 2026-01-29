@@ -46,16 +46,16 @@ const testimonials = [
     name: "Amy Rose",
     quote: "We had solar panels installed at our business by EP Electrics. They really impressed us.",
     rating: 5
-  },,
+  },
   {
-    name: "Mario Ballet",
-    quote: "I called EP Electrics to fit an EV Charger at home, it was ready to go by the next day and everything was done perfectly.",
+    name: "Cloud Strife",
+    quote: "We had a great experience with EP Electrics, they completed everything professionally.",
     rating: 5
   },
   {
-    name: "Amy Rose",
-    quote: "We had solar panels installed at our business by EP Electrics. They really impressed us.",
-    rating: 5
+    name: "Si-on Park",
+    quote: "Working with EP Electrics was amazing, I highly recommend their services to anyone.",
+    rating: 4
   },
 ]
 
