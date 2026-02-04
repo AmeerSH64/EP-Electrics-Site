@@ -1,4 +1,4 @@
-import { services } from '../constants';
+import { serviceList, services } from '../constants';
 import ServiceCard from '../components/ServiceCard';
 
 const Services = () => {
@@ -11,15 +11,30 @@ const Services = () => {
             What we do
           </p>
         </div>
+        {/* Services list */}
+        <div className='animate-fade-in animation-delay-200'>
+          <div className='relative overflow-hidden'>
+            <div className='flex animate-marquee'>
+              {[...serviceList, ...serviceList].map((service, idx) => (
+                <div key={idx} className='shrink-0 px-8 py-4'>
+                  <span className='text-3xl font-semibold text-black-200/80 hover:text-black-200 transition-colors'>
+                    {service}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div>
           {/* Service cards would go here */}
           <div>
             <div className='relative service-grid grid gap-4'>
               <div className='service-main bg-black-50'>
-                <h2 className="text-6xl">Select a Service to View Information</h2>
+                <h2 className="text-6xl animate-fade-in animation-delay-300">Select a Service to View Information</h2>
               </div>
               {services.map((service, index) => (
-                <div key={index} className='relative'>
+                <div key={index} className={`relative animate-fade-in animation-delay-${400 + index * 100}`}>
                   <ServiceCard name={service.name} description={service.description} />
                 </div>
               ))}

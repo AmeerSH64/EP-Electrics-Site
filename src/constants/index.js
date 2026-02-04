@@ -7,6 +7,18 @@ const socials = [
   { name: "Facebook", href: "#", icon: IconBrandFacebook },
 ]
 
+const serviceList = [
+  "EV Charger Installation",
+  "Solar Panel Installation",
+  "Air Conditioning Installation",
+  "Electrical Inspections",
+  "Property Lighting",
+  "Security Cameras",
+  "Rewiring",
+  "Fuse Box Upgrades",
+  "Loft Conversions"
+]
+
 const services = [
   {
     name: "EV Charger Installation",
@@ -96,6 +108,7 @@ const contactInfo = [
 
 export {
   socials,
+  serviceList,
   services,
   testimonials,
   contactInfo,
