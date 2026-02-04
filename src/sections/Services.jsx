@@ -29,13 +29,19 @@ const Services = () => {
         <div>
           {/* Service cards would go here */}
           <div>
-            <div className='relative service-grid grid gap-4'>
+            <div className='service-grid grid gap-4'>
               <div className='service-main bg-black-50'>
-                <h2 className="text-6xl animate-fade-in animation-delay-300">Select a Service to View Information</h2>
+                <div className='service-main-info'>
+                  <h2 className="text-3xl md:text-6xl animate-fade-in animation-delay-300">
+                    Select a Service to View Information
+                  </h2>
+                  <p className='text-xl md:text-3xl'>Hover to see more</p>
+                </div>
               </div>
               {services.map((service, index) => (
-                <div key={index} className={`relative animate-fade-in animation-delay-${400 + index * 100}`}>
-                  <ServiceCard name={service.name} description={service.description} />
+                <div key={index} className={`animate-fade-in animation-delay-${400 + index * 100}`}>
+                  <ServiceCard name={service.name} SIcon={service.icon}
+                  image={service.image} description={service.description} />
                 </div>
               ))}
             </div>

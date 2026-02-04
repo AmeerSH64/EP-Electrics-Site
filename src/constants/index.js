@@ -23,31 +23,37 @@ const services = [
   {
     name: "EV Charger Installation",
     icon: IconChargingPile,
+    image: "/images/EV-Charger-normal.png",
     description: "Installing EV chargers at your property."
   },
   {
     name: "Solar Panel Installation",
     icon: IconSolarPanel2,
+    image: "/images/Solar-Panels.png",
     description: "Installing solar panels at your property."
   },
   {
     name: "Air Conditioning Installation",
     icon: IconAirConditioning,
+    image: "/images/Wall-Mounted-AC-Unit.jpg",
     description: "Installing air conditioning units at your property."
   },
   {
     name: "Electrical Inspections",
     icon: IconCircuitCapacitor,
+    image: "/images/Inspection.png",
     description: "Carry out safety inspections on your property."
   },
   {
     name: "Property Lighting",
     icon: IconBulb,
-    description: "Installing property lighting at your property."
+    image: "/images/Lighting.jpg",
+    description: "Installing lighting at your property."
   },
   {
     name: "Security Cameras",
     icon: IconDeviceComputerCamera,
+    image: "/images/CCTV-Install.png",
     description: "Installing security cameras at your property."
   },
 ]

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
 html,
 body {
   width: 100dvw;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
   background-color: black;
   color: white;
   scroll-behavior: smooth;
@@ -163,14 +165,10 @@ section {
 
       &:hover {
         box-shadow: 0 0 15px var(--color-secondary);
-
-        svg {
-          @apply animate-bounce
-        }
       }
 
       svg {
-        @apply w-8 h-8 -translate-y-0.5;
+        @apply w-8 h-8 -translate-y-0.5 animate-bounce;
       }
     }
 
@@ -183,7 +181,7 @@ section {
     }
 
     #solar-panel {
-      @apply -translate-y-30 translate-x-10 md:-translate-y-80 xl:-translate-x-200 xl:-translate-y-150 z-2;
+      @apply -translate-y-30 translate-x-10 md:-translate-y-80 xl:-translate-x-170 xl:-translate-y-150 z-2;
     }
   }
 
@@ -191,6 +189,7 @@ section {
     @apply py-20;
 
     .service-grid {
+      position: relative;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       max-inline-size: 62.5rem;
       margin-inline: auto;
@@ -198,7 +197,7 @@ section {
 
     .service-main {
       @apply flex flex-col items-center justify-center p-10 rounded-2xl bg-black-200;
-
+      
       grid-area: 1 / 1 / 3 / 3;
     }
 
@@ -206,10 +205,24 @@ section {
       @apply flex items-center justify-center transition-colors;
     }
 
+    a {
+      @apply relative block outline-none;
+    }
+
+    a::after {
+      @apply absolute inset-0 rounded-xl border-2 border-white-50 pointer-events-none
+        bg-primary/40 opacity-0;
+      content: '';
+      visibility: hidden;
+    }
+
+    a:hover::after, a:focus-visible::after {
+      @apply opacity-100 visible;
+    }
+
     .service-card-text {
-      @apply absolute flex items-center justify-center inset-6;
-      
-      grid-area: 1 / 1 / 3 / 3;
+      @apply absolute inset-6 flex flex-col items-center justify-center;
+      grid-column: 1 / 3;
     }
   }
 
