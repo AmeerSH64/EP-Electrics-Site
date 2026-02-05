@@ -1,10 +1,25 @@
-import { IconAirConditioning, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX, IconBulb, IconChargingPile, IconCircuitCapacitor, IconDeviceComputerCamera, IconMail, IconMapPin, IconPhone, IconSolarPanel2 } from "@tabler/icons-react";
+import { IconAirConditioning, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX, IconBulb, IconChargingPile, IconCircuitCapacitor, IconDeviceComputerCamera, IconGraph, IconMail, IconMapPin, IconPhone, IconRocket, IconSolarPanel2, IconUsersGroup } from "@tabler/icons-react";
 
 const socials = [
   { name: "Instagram", href: "#", icon: IconBrandInstagram },
   { name: "X", href: "#", icon: IconBrandX },
   { name: "TikTok", href: "#", icon: IconBrandTiktok },
   { name: "Facebook", href: "#", icon: IconBrandFacebook },
+]
+
+const highlights = [
+  { title: "Creativity",
+  description: "Utilising outside the box thinking to provide unique and effective soluitons.",
+  icon: IconBulb },
+  { title: "Teamwork",
+  description: "Working together in a group to complete tasks efficiently.",
+  icon: IconUsersGroup },
+  { title: "Reliability",
+  description: "Always available to deal with queries and issues when needed.",
+  icon: IconGraph },
+  { title: "Performance",
+  description: "Ensuring all work is completed to a high standard.",
+  icon: IconRocket },
 ]
 
 const serviceList = [
@@ -114,6 +129,7 @@ const contactInfo = [
 
 export {
   socials,
+  highlights,
   serviceList,
   services,
   testimonials,

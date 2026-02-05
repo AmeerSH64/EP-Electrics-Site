@@ -39,7 +39,7 @@ const Testimonials = () => {
                   testimonial={testimonials[activeIndex].quote} 
                   rating={testimonials[activeIndex].rating} />
               </div>
-              <div className="flex w-fit items-center justify-center gap-4 mt-8 rounded-full bg-black-200">
+              <div className="flex items-center justify-center gap-4 mt-8">
                 <button onClick={previous} 
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
                   <IconArrowLeft />

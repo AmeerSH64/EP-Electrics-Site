@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="section-padding text-center">
         <h2 className="md:text-7xl text-3xl">
-          Get in <span className="font-semibold text-primary">Touch</span>
+          Get in <span className="font-bold text-primary">Touch</span>
         </h2>
         <p className="md:text-2xl text-white-50 mb-8">
           Request a quote or learn more
@@ -27,7 +27,7 @@ const Contact = () => {
                 <textarea id="message" name="message" placeholder="What's your message?"></textarea>
               </div>
               <a href="mailto:contact@epelctrics.com">
-                <button className="flex flex-row gap-4">
+                <button className="flex flex-row gap-4 w-full">
                   Send Message<IconSend className="w-5 h-5 mt-1" />
                 </button>
               </a>

@@ -6,7 +6,7 @@ const Services = () => {
     <section id="services" className='services-section'>
       <div className="section-padding text-center">
         <div>
-          <h1 className="md:text-7xl text-3xl">Our Services</h1>
+          <h1 className="md:text-7xl text-3xl">Our <span className="text-primary font-bold">Services</span></h1>
           <p className="md:text-2xl text-white-50">
             What we do
           </p>
@@ -17,7 +17,7 @@ const Services = () => {
             <div className='flex animate-marquee'>
               {[...serviceList, ...serviceList].map((service, idx) => (
                 <div key={idx} className='shrink-0 px-8 py-4'>
-                  <span className='text-3xl font-semibold text-black-200/80 hover:text-black-200 transition-colors'>
+                  <span className='text-3xl font-semibold text-black-200 hover:text-white-50 transition-colors'>
                     {service}
                   </span>
                 </div>

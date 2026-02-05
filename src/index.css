@@ -185,6 +185,12 @@ section {
     }
   }
 
+  .about {
+    .about-text {
+      @apply flex flex-col text-start text-xl;
+    }
+  }
+
   .services-section {
     @apply py-20;
 
