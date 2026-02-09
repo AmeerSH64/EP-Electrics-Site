@@ -54,7 +54,19 @@ const Contact = () => {
                 ))}
               </div>
             </div>
+            <div className="bg-black-200 rounded-3xl animate-fade-in animation-delay-500">
+              <div className="flex items-center gap-3 p-10">
+                <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+                <span className="text-white-50 font-semibold text-2xl">Currently Available</span>
+              </div>
+              <p className="text-lg p-4">
+                We are currently available to book new projects, 
+                please reach out to us if you have anything in mind.
+              </p>
+            </div>
           </div>
+
+          
         </div>
       </div>
     </section>

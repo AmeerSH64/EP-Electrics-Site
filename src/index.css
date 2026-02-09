@@ -217,13 +217,8 @@ section {
 
     a::after {
       @apply absolute inset-0 rounded-xl border-2 border-white-50 pointer-events-none
-        bg-primary/40 opacity-0;
+        bg-primary/40;
       content: '';
-      visibility: hidden;
-    }
-
-    a:hover::after, a:focus-visible::after {
-      @apply opacity-100 visible;
     }
 
     .service-card-text {
