@@ -5,7 +5,7 @@ const NavBar = () => {
     <header className='navbar'>
         <div className='inner gap-10'>
             <a className='logo hover:scale-110' href="#home">
-                <img src="/EP-Symbol.svg" alt="EP Logo" />
+                <img src="/EpElectrics-Logo.png" alt="EP Logo" />
             </a>
             <nav className='desktop'>
                 <ul>

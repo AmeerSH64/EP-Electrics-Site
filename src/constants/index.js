@@ -1,4 +1,4 @@
-import { IconAirConditioning, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX, IconBulb, IconChargingPile, IconCircuitCapacitor, IconDeviceComputerCamera, IconGraph, IconMail, IconMapPin, IconPhone, IconRocket, IconSolarPanel2, IconUsersGroup } from "@tabler/icons-react";
+import { IconAirConditioning, IconBolt, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok, IconBrandX, IconBulb, IconChargingPile, IconCircuitCapacitor, IconDeviceComputerCamera, IconGraph, IconHeartHandshake, IconMail, IconMapPin, IconPhone, IconRocket, IconSolarPanel2, IconUsersGroup } from "@tabler/icons-react";
 
 const socials = [
   { name: "Instagram", href: "#", icon: IconBrandInstagram },
@@ -9,7 +9,7 @@ const socials = [
 
 const highlights = [
   { title: "Creativity",
-  description: "Utilising outside the box thinking to provide unique and effective soluitons.",
+  description: "Utilising outside the box thinking to provide unique and effective solutions.",
   icon: IconBulb },
   { title: "Teamwork",
   description: "Working together in a group to complete tasks efficiently.",
@@ -19,7 +19,13 @@ const highlights = [
   icon: IconGraph },
   { title: "Performance",
   description: "Ensuring all work is completed to a high standard.",
-  icon: IconRocket },
+  icon: IconRocket },,
+  { title: "Efficiency",
+  description: "Making sure that no time is wasted when carrying out work.",
+  icon: IconBolt },
+  { title: "Friendliness",
+  description: "Approaching each job with a smile and a willingness to help.",
+  icon: IconHeartHandshake },
 ]
 
 const serviceList = [
