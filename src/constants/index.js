@@ -129,7 +129,7 @@ const contactInfo = [
     icon: IconMapPin,
     label: "Location",
     value: "Milton Keynes, UK",
-    href: "https://maps.google.com/?q=Milton Keynes, UK",
+    href: "https://maps.google.com/?q=Milton-Keynes-UK",
   },
 ]
 
