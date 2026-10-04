@@ -15,3 +15,9 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 # EP-Electrics-Site
+
+This website is for the electrical contracting company EP Electrics. It is a showcase site that highlights their products and services and allows customers to contact if they require work to be done.
+
+## How to Use
+
+To run this website, first execute the command `npm install`, and then execute `npm run dev`.
